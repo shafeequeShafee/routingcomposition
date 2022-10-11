@@ -1,0 +1,36 @@
+npm install -g @vue/cli
+vue create (project name)
+
+vue --version
+npm run serve
+
+extensions:  vetur
+
+####  Four way to add vue to project:   #####
+1) CDN package (content delivery network (CDN) )
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">{{ message }}</div>
+
+    <script>
+     const { createApp } = Vue
+
+     createApp({
+        data() {
+           return {
+             message: 'Hello Vue!'
+           }
+        }
+     }).mount('#app')
+   </script>
+
+2)using npm (Node Package Manager)
+  npm init vue@latest
+3) Vue CLI(command line interface)
+   npm install -g @vue/cli
+   vue create <project name>
+4) Vite
+   npm init vite-app <Project name>
+
+
+##########  Project Structure  #############
